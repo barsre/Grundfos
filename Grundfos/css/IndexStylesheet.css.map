@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,kBAAkB;AAElB,IAAI;EACH,MAAM,EAAE,CAAC;EACN,gBAAgB,EAAE,OAAO",
+"sources": ["../sass/IndexStylesheet.scss"],
+"names": [],
+"file": "IndexStylesheet.css"
+}
