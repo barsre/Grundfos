@@ -1,0 +1,83 @@
+@font-face {
+  font-family: grundfos-light;
+  src: url(../fonts/GrundfosTheSansV2OT-2XL.otf); }
+@font-face {
+  font-family: grundfos-bold;
+  src: url(../fonts/GrundfosTheSansV2OT-8XB.otf); }
+/* Globals definition */
+/* Grundfos Colors */
+/* End Grundfos Colors */
+body {
+  margin: 0; }
+
+header {
+  background-color: #11497b;
+  max-width: 80%;
+  height: 150px;
+  margin: auto;
+  position: relative; }
+  header .logo {
+    width: 20%;
+    padding: 30px;
+    margin-left: 10px; }
+  header .user-login {
+    width: 40%;
+    position: absolute;
+    top: 20px;
+    right: 0; }
+  header .user-login li {
+    display: inline;
+    font-size: 0.7em;
+    color: #3386c3;
+    font-family: grundfos-light; }
+  header .navigation {
+    background-color: #9CA0A3;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  header .nav {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    padding: 15px; }
+  header .nav li {
+    display: inline;
+    font-size: 0.8em;
+    color: #000;
+    font-family: grundfos-bold;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 15px; }
+
+.container {
+  background-image: url(../images/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 2px;
+  z-index: -5;
+  width: 80%;
+  height: 536px;
+  position: relative;
+  margin: auto; }
+
+.main-title {
+  padding: 30px;
+  width: 350px;
+  margin: auto;
+  font-size: 2em;
+  font-family: grundfos-light;
+  text-transform: uppercase;
+  color: #11497b; }
+
+.title {
+  text-align: center;
+  display: inline;
+  font-size: 1em;
+  font-family: grundfos-light; }
+
+#title2 {
+  font-family: grundfos-bold; }
