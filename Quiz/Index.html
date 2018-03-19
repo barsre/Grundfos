@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Dom tree example</title>
+	
+	<link href="css/IndexStylesheet.css" rel="stylesheet">
+	
+
+</head>
+
+<body>
+
+    <div id="quiz1" class="container">
+        
+        <div id="nr1" class="container__content">
+            <div class="container__content__header">
+                <p class="container__content__header__number">1 / 3</p>
+                <button onclick="toNr2()">Next</button>
+            </div>
+            <h1>Spørgsmål 1</h1>
+            <div class="container__content__answers">
+                <div class="container__content__answers__single">
+                    <input type="radio" name="q1" id="yes1">
+                    <p>Svar 1</p>
+                </div>
+                <div class="container__content__answers__single">
+                    <input type="radio" name="q1">
+                    <p>Svar 2</p>
+                </div>
+                <div class="container__content__answers__single">
+                    <input type="radio" name="q1">
+                    <p>Svar 3</p>
+                </div>
+                <div class="container__content__answers__single">
+                    <input type="radio" name="q1">
+                    <p>Svar 4</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="nr2" class="container__content hidden">
+            <div class="container__content__header">
+                <p class="container__content__header__number">2 / 3</p>
+                <button onclick="toNr3()">Next</button>
+            </div>
+            <h1>Spørgsmål 2</h1>
+            <div class="container__content__answers">
+                <div class="container__content__answers__single">
+                    <input type="radio" name="q2" id="yes2">
+                    <p>Svar 1</p>
+                </div>
+                <div class="container__content__answers__single">
+                    <input type="radio" name="q2">
+                    <p>Svar 2</p>
+                </div>
+                <div class="container__content__answers__single">
+                    <input type="radio" name="q2">
+                    <p>Svar 3</p>
+                </div>
+                <div class="container__content__answers__single">
+                    <input type="radio" name="q2">
+                    <p>Svar 4</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="nr3" class="container__content hidden">
+            <div class="container__content__header">
+                <p class="container__content__header__number">3 / 3</p>
+                <button onclick="done()">Next</button>
+            </div>
+            <h1>Spørgsmål 3</h1>
+            <div class="container__content__answers">
+                <div class="container__content__answers__single">
+                    <input type="radio" name="q3" id="yes3">
+                    <p>Svar 1</p>
+                </div>
+                <div class="container__content__answers__single">
+                    <input type="radio" name="q3">
+                    <p>Svar 2</p>
+                </div>
+                <div class="container__content__answers__single">
+                    <input type="radio" name="q3">
+                    <p>Svar 3</p>
+                </div>
+                <div class="container__content__answers__single">
+                    <input type="radio" name="q3">
+                    <p>Svar 4</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="done" class="container__content hidden">
+            <div class="container__content__header">
+                <p class="container__content__header__number">3 / 3</p>
+                <button onclick="repeat()">Next</button>
+            </div>
+            <h1 id="result"></h1>
+        </div>
+        
+    </div>
+
+</body>
+
+<script src="js/script.js"></script>
+
+</html>
