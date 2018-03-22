@@ -128,21 +128,30 @@ left: 0;
     text-transform: uppercase;
     margin: 15px;    
     
+  
+        }
     
+       li:hover {
+            
+         @include hover-fade();
+         color: $corporate-blue;
+         filter: brightness(1.5);
     }    
 
 
 }
 
-.container { 
+.container__quiz { 
 background-image: url(../images/bg.png);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;       
 width: 100%;
-height: 536px;
+height: 636px;
 position: relative;
 margin:auto;
+    
+    
     
 
 
@@ -169,6 +178,348 @@ display: inline;
 font-size: 1em;
 font-family: grundfos-light;
 
+    &__user { 
+    
+    width: 140px;
+    height: 30px;
+        
+        
+    }    
+    
+}
+
+#title2 { 
+
+font-family: grundfos-bold;    
+
+}
+
+    
+ 
+    .question-section { 
+    
+    background-color: rgba(0,0,0,0.62);
+    border: solid;
+    border-width: 1px;
+    border-color: $blue;    
+    width: 55%;
+    height: 450px;
+    margin: auto;  
+        
+        &__exit { 
+        
+        font-size: 2em;
+        float: right;
+        color: #fff;
+        padding: 1%;
+        margin-top: -4%;    
+            
+        
+        }
+        
+    
+        &__progress { 
+        
+        color: #fff;
+        padding: 1%;
+        font-family: grundfos-light;
+        margin: auto;
+            
+            
+        }
+    
+        &__question { 
+        
+        color: #fff;
+        text-align:center;
+        width:50%;
+        margin:auto;
+        font-family: grundfos-light;
+        font-size: 1vw;    
+        
+        
+        } 
+        
+        &__answer { 
+        
+        
+        width: 60%;
+        height: 200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto;    
+        
+            &__item { 
+            
+            width: 70%;
+            background-color: #fff; 
+            margin: auto;
+            border: solid;
+            border-width: 1px;
+            border-color: $blue;     
+                
+                img { 
+                
+                padding: 4%;
+                width:20%;    
+                    
+                
+                }
+                
+                p { 
+                
+                color: #000;
+                margin: auto;    
+                float: right;
+                text-align: center;
+                margin-right: 35%;
+                margin-top:8%;    
+                font-family: grundfos-light; 
+                font-size: 0.8vw;    
+                    
+                
+                }
+                
+            }    
+            
+        }
+        
+    }
+    
+    
+    
+
+    
+    .progress { 
+    position: absolute;
+    height: 5%;
+    width: 100%;    
+    background-image: url(../images/progress.png);
+    bottom: 0;
+    left: 0; 
+    @include shadow();    
+        
+    }    
+    .xp-bar { 
+    padding: 5px;
+    margin: auto;
+    text-align: center;    
+    font-family: grundfos-light;
+    color: $complementary-blue;    
+    }
+    
+   
+    
+}      
+    
+.container__video { 
+background-image: url(../images/bg.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;       
+width: 100%;
+height: 636px;
+position: relative;
+margin:auto;
+display:none;    
+    
+    
+
+
+
+.main-title { 
+
+top: 0;
+left: 0;     
+width: 30%;    
+margin:auto;    
+font-size:2em;
+text-align: center;    
+font-family: grundfos-light;
+text-transform: uppercase;
+color: $corporate-blue;    
+padding: 15px;
+}
+
+     
+    
+.title { 
+text-align:center;
+display: inline; 
+font-size: 1em;
+font-family: grundfos-light;
+
+    &__user { 
+    
+    width: 140px;
+    height: 30px;
+        
+        
+    }    
+    
+}
+
+#title2 { 
+
+font-family: grundfos-bold;    
+
+}
+
+    
+    
+    
+    .video-title { 
+    
+    
+    display: grid;
+    
+    margin-left: 20%;
+    grid-template-columns: 40% 40%;
+        
+    
+        .title-content { 
+        
+        font-family: grundfos-light;
+        font-weight: 200;    
+        font-size: 2em;
+        color: #fff;    
+        
+        }
+             .exit { 
+            
+            font-size: 2em;
+            color: #fff;
+            margin: auto;
+            margin-left: 85%;     
+            
+            }  
+        
+    
+    }
+    
+    .video-section {
+    margin: auto;    
+    display: grid;
+    width:100%;    
+    grid-template-columns: 40% 25%;
+    position: absolute;
+    margin-left: 20%;
+    height: 60%; 
+    grid-gap: 2%;
+        
+        
+        
+        
+    
+    .video-content { 
+    
+     border-style: solid;
+    border-width: 2px;
+    border-color: $blue;
+        
+    
+    }
+    
+    .video-list { 
+    
+    background-color: rgba(0,0,0,0.56);
+    border-style: solid;
+    border-width: 2px;
+    border-color: $blue;    
+    width: 80%;
+    font-family: grundfos-light;
+    
+        #video-title{ 
+        
+        color: #fff;
+        font-size: 1.5em;
+        margin: 5%;
+        margin-left: 8%;    
+        }
+    
+        .videos { 
+        
+        color: #fff;
+        line-height: 250%    
+        
+            
+            
+        }    
+        
+        
+    }
+    
+        
+    
+        
+    } 
+    
+    .progress { 
+    position: absolute;
+    height: 5%;
+    width: 100%;    
+    background-image: url(../images/progress.png);
+    bottom: 0;
+    left: 0; 
+    @include shadow();    
+        
+    }    
+    .xp-bar { 
+    padding: 5px;
+    margin: auto;
+    text-align: center;    
+    font-family: grundfos-light;
+    color: $complementary-blue;    
+    }
+    
+   
+    
+}    
+    
+.container { 
+background-image: url(../images/bg.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;       
+width: 100%;
+height: 536px;
+position: relative;
+margin:auto;
+display:none;    
+    
+
+
+
+.main-title { 
+
+top: 0;
+left: 0;     
+width: 30%;    
+margin:auto;    
+font-size:2em;
+text-align: center;    
+font-family: grundfos-light;
+text-transform: uppercase;
+color: $corporate-blue;    
+padding: 15px;
+}
+
+     
+    
+.title { 
+text-align:center;
+display: inline; 
+font-size: 1em;
+font-family: grundfos-light;
+
+    &__user { 
+    
+    width: 140px;
+    height: 30px;
+        
+        
+    }    
+    
 }
 
 #title2 { 
@@ -244,10 +595,19 @@ border-radius: 10px;
     width: 50%;   
     background-color: blue;
     margin:auto;
-        
+    display: none;    
         
     
     }    
+    
+     .content__profile { 
+    width: 50%;   
+    background-color: blue;
+    margin:auto;
+        
+        
+    
+    } 
     
     .trophy { 
     width: 4%;    
@@ -283,7 +643,7 @@ border-radius: 10px;
     position: absolute;
     height: 5%;
     width: 100%;    
-    background-color: red;
+    background-image: url(../images/progress.png);
     bottom: 0;
     left: 0; 
     @include shadow();    
@@ -433,6 +793,19 @@ padding: 25px;
                 
             }
             
+            li:hover {
+                
+            @include hover-fade();
+            color: $corporate-blue;
+            filter: brightness(1.5);
+            border: solid;
+            padding-bottom: 5px;    
+            border-width: 0 0 3px;
+                
+                
+                
+            }
+            
      } 
     
 
@@ -490,7 +863,26 @@ padding: 25px;
         
       
         
-       
+    footer { 
+    
+
+    height: 560px;
+    background-image: url(../images/Footer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    
+          
+        
+        }
+    
+    footer:hover { 
+        
+        @include hover-fade();
+        filter:brightness(1.2);
+        
+        
+    }      
     
     
 }

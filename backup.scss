@@ -1,0 +1,63 @@
+/* Scss Document */
+
+.circles {
+  width: 100%;
+    float:left;
+    margin: auto;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 100%;
+  padding-bottom: 100%;
+  background: white;
+  @include shadow ();
+    
+}  
+   
+    .content { 
+    width: 50%;   
+    background-color: blue;
+    margin:auto;
+    display: none;    
+        
+    
+    }    
+    
+     .content__profile { 
+    width: 50%;   
+    background-color: blue;
+    margin:auto;
+        
+        
+    
+    } 
+    
+    .trophy { 
+    width: 4%;    
+    margin-top: 10%;    
+    display:block;
+    margin: auto;
+    position: absolute;
+    margin-left: 1%; 
+    padding: 20px;    
+    
+    }
+    .text1 { 
+    
+    position: absolute;
+    margin-top: 8%;
+    text-align: center;   
+    font-family: grundfos-bold;
+    text-transform: uppercase;
+    
+    }
+    
+    .text2 { 
+    
+    position: absolute;
+    margin-top: 11%;
+    text-align: center;    
+    font-family: grundfos-light;
+    
+    }
