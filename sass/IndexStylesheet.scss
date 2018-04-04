@@ -49,6 +49,10 @@ body{
 
 }
 
+.d-none{
+    display: none;
+}
+
 .page1 { 
 margin: auto;
 width:80%;
@@ -350,6 +354,7 @@ width: 100%;
 height: 636px;
 position: relative;
 margin:auto;
+display: none; 
 	
     
     
@@ -539,7 +544,6 @@ width: 100%;
 height: 536px;
 position: relative;
 margin:auto;
-display: none;	
     
     
 .main-title { 
@@ -647,8 +651,7 @@ border-radius: 10px;
     .content { 
     width: 50%;   
     background-color: blue;
-    margin:auto;
-    display: none;    
+    margin:auto; 
         
     
     }    
@@ -657,6 +660,7 @@ border-radius: 10px;
     width: 50%;   
     background-color: blue;
     margin:auto;
+    display: none;
         
         
     

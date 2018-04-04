@@ -11,7 +11,7 @@
 /* Global modifications end */
 body {
   margin: 0;
-  background-color: #F2F2F2; }
+  background-color: blue; }
 
 .page1 {
   margin: auto;
@@ -187,7 +187,8 @@ body {
     width: 100%;
     height: 636px;
     position: relative;
-    margin: auto; }
+    margin: auto;
+    display: none; }
     .page1 .container__video .main-title {
       top: 0;
       left: 0;
@@ -359,8 +360,7 @@ body {
     .page1 .container .content {
       width: 50%;
       background-color: blue;
-      margin: auto;
-      display: none; }
+      margin: auto; }
     .page1 .container .content__profile {
       width: 50%;
       background-color: blue;
@@ -544,3 +544,5 @@ body {
 
   .videos {
     line-height: 50px; } }
+
+/*# sourceMappingURL=IndexStylesheet.css.map */
