@@ -1,0 +1,44 @@
+/* CSS Document */
+body {
+  margin: 0;
+  background-color: #424242; }
+
+.hidden {
+  display: none; }
+
+.container {
+  margin: auto;
+  margin-top: 50px;
+  width: 60%;
+  height: 420px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #000; }
+  .container__content__header {
+    display: grid;
+    grid-template-columns: auto 20%; }
+    .container__content__header__number {
+      padding: 20px; }
+    .container__content__header button {
+      margin: 20px; }
+  .container__content h1 {
+    margin-top: 50px;
+    position: absolute;
+    width: 60%;
+    text-align: center; }
+  .container__content__answers {
+    padding: 200px 0 20px;
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    grid-gap: 10px 1%; }
+    .container__content__answers__single {
+      display: grid;
+      grid-template-columns: 10% 90%;
+      border: solid;
+      border-width: 1px;
+      border-color: gray;
+      border-radius: 20px; }
+      .container__content__answers__single input {
+        margin: 18px 15px 0; }
