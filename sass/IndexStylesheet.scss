@@ -150,7 +150,7 @@ width: 100%;
 height: 636px;
 position: relative;
 margin:auto;
-    
+display: none;    
     
     
 
@@ -212,10 +212,19 @@ font-family: grundfos-bold;
         float: right;
         color: #fff;
         padding: 1%;
-        margin-top: -4%;    
+        margin-top: -4%;
+		@include hover-fade();	
+		
             
         
         }
+		
+		&__exit:hover { 
+		
+		font-size:2.2em;
+		color: $blue;
+		
+		}
         
     
         &__progress { 
@@ -256,7 +265,11 @@ font-family: grundfos-bold;
             margin: auto;
             border: solid;
             border-width: 1px;
-            border-color: $blue;     
+            border-color: $blue;
+			@include hover-fade ();	
+				
+				
+				
                 
                 img { 
                 
@@ -279,9 +292,25 @@ font-family: grundfos-bold;
                     
                 
                 }
+				
+				p:hover { 
+				
+				color:#fff
+				
+				}	
+				
                 
             }    
             
+			&__item:hover { 
+			
+			background-color: $blue;
+			color: #fff;
+
+				
+			
+			}
+			
         }
         
     }
@@ -321,7 +350,8 @@ width: 100%;
 height: 636px;
 position: relative;
 margin:auto;
-display:none;    
+	
+    
     
     
 
@@ -390,10 +420,18 @@ font-family: grundfos-bold;
             font-size: 2em;
             color: #fff;
             margin: auto;
-            margin-left: 85%;     
+            margin-left: 85%;
+			@include hover-fade();	 
             
             }  
-        
+       
+		.exit:hover { 
+		
+		color: $blue;
+		font-size: 2.2em;	
+		
+		
+		}
     
     }
     
@@ -440,11 +478,24 @@ font-family: grundfos-bold;
         .videos { 
         
         color: #fff;
-        line-height: 250%    
-        
+        line-height: 250%
+			
+         
             
-            
-        }    
+        } 
+		
+		li  { 
+		
+		@include hover-fade;	
+			
+		
+		}
+		
+		li:hover { 
+		
+		color: $blue;	
+		
+		}
         
         
     }
@@ -461,7 +512,8 @@ font-family: grundfos-bold;
     background-image: url(../images/progress.png);
     bottom: 0;
     left: 0; 
-    @include shadow();    
+    @include shadow(); 
+		
         
     }    
     .xp-bar { 
@@ -469,7 +521,8 @@ font-family: grundfos-bold;
     margin: auto;
     text-align: center;    
     font-family: grundfos-light;
-    color: $complementary-blue;    
+    color: $complementary-blue;
+		
     }
     
    
@@ -485,18 +538,16 @@ width: 100%;
 height: 536px;
 position: relative;
 margin:auto;
-display:none;    
+display: none;	
     
-
-
-
+    
 .main-title { 
 
 top: 0;
 left: 0;     
 width: 30%;    
 margin:auto;    
-font-size:2em;
+font-size:1.8vw;
 text-align: center;    
 font-family: grundfos-light;
 text-transform: uppercase;
@@ -511,6 +562,7 @@ text-align:center;
 display: inline; 
 font-size: 1em;
 font-family: grundfos-light;
+	
 
     &__user { 
     
@@ -554,7 +606,7 @@ border-radius: 10px;
  
     .profile_text { 
     
-    font-size: 1em;
+    font-size: 1vw;
     color: #fff;
     padding: 7px;    
     font-family: grundfos-light;
@@ -623,9 +675,15 @@ border-radius: 10px;
     
     position: absolute;
     margin-top: 8%;
-    text-align: center;   
+    text-align: center; 
+	vertical-align: middle;	
     font-family: grundfos-bold;
     text-transform: uppercase;
+	font-size: 1vw;
+		
+		
+		
+		
     
     }
     
@@ -633,8 +691,11 @@ border-radius: 10px;
     
     position: absolute;
     margin-top: 11%;
-    text-align: center;    
+	margin-left: -1.5%;	
+    text-align: center;
+	vertical-align: middle;	
     font-family: grundfos-light;
+	font-size: 1vw;	
     
     }
     
@@ -683,7 +744,7 @@ padding: 25px;
 
     .resume-progress__video { 
     
-     width: 140px;
+     width: 50%;
      height: 75px;
      background-image: url(../images/play-button.png);
      border-style:solid;
@@ -703,7 +764,7 @@ padding: 25px;
      
      h1 { 
      
-     font-size: 1.3em;
+     font-size: 1.2vw;
      margin-left: 20%;     
          
      
@@ -711,7 +772,7 @@ padding: 25px;
      
      h2 { 
      
-     font-size: 0.8em;
+     font-size: 1vw;
      font-weight: 100;
          
      
@@ -737,7 +798,7 @@ padding: 25px;
             
             h1 { 
             margin-top: 15%;
-            font-size: 1.7em;
+            font-size: 2vw;
             font-family: grundfos-light;
             color: $corporate-blue;    
             
@@ -753,7 +814,7 @@ padding: 25px;
             
             display:inline;
             color:#000;
-            font-size: 0.7em;
+            font-size: 0.7vw;
             font-family: grundfos-bold;
             margin-left: 6%;
             margin-right: 3%;
@@ -763,7 +824,7 @@ padding: 25px;
          
             &__filter { 
             
-           width: 100px;
+           width: 100%;
            height: 25px;
            background-image: url(../images/../images/filter-btn.png);
            background-repeat: no-repeat;
@@ -772,7 +833,7 @@ padding: 25px;
            margin-left: 3%;        
                 
                 p { 
-                 font-size: 1em;
+                 font-size: 0.8vw;
                 color: #fff;
                 padding: 7px;    
                 font-family: grundfos-light;
@@ -839,7 +900,7 @@ padding: 25px;
             
             h2 { 
             
-            font-size: 0.7em;
+            font-size: 0.7vw;
             font-family: grundfos-light;
             margin-top: -8%;
             color: $grey;    
@@ -848,10 +909,11 @@ padding: 25px;
                 
                 h1 { 
                 margin-top: -1%;    
-                font-size: 1.8em;
+                font-size: 1.2vw;
                 color: $corporate-blue; 
-                font-family: grundfos-light;    
-                    
+                font-family: grundfos-light;
+				padding-bottom: 5%;	
+                padding-top: 2%;    
                 }    
                 
             }
