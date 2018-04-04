@@ -61,16 +61,23 @@ body {
       font-weight: 900;
       text-transform: uppercase;
       margin: 15px; }
-  .page1 .container {
+    .page1 header li:hover {
+      -webkit-transition: 0.3s ease-in-out;
+      -o-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      color: #11497b;
+      filter: brightness(1.5); }
+  .page1 .container__quiz {
     background-image: url(../images/bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 536px;
+    height: 636px;
     position: relative;
-    margin: auto; }
-    .page1 .container .main-title {
+    margin: auto;
+    display: none; }
+    .page1 .container__quiz .main-title {
       top: 0;
       left: 0;
       width: 30%;
@@ -81,11 +88,226 @@ body {
       text-transform: uppercase;
       color: #11497b;
       padding: 15px; }
+    .page1 .container__quiz .title {
+      text-align: center;
+      display: inline;
+      font-size: 1em;
+      font-family: grundfos-light; }
+      .page1 .container__quiz .title__user {
+        width: 140px;
+        height: 30px; }
+    .page1 .container__quiz #title2 {
+      font-family: grundfos-bold; }
+    .page1 .container__quiz .question-section {
+      background-color: rgba(0, 0, 0, 0.62);
+      border: solid;
+      border-width: 1px;
+      border-color: #3386c3;
+      width: 55%;
+      height: 450px;
+      margin: auto; }
+      .page1 .container__quiz .question-section__exit {
+        font-size: 2em;
+        float: right;
+        color: #fff;
+        padding: 1%;
+        margin-top: -4%;
+        -webkit-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+      .page1 .container__quiz .question-section__exit:hover {
+        font-size: 2.2em;
+        color: #3386c3; }
+      .page1 .container__quiz .question-section__progress {
+        color: #fff;
+        padding: 1%;
+        font-family: grundfos-light;
+        margin: auto; }
+      .page1 .container__quiz .question-section__question {
+        color: #fff;
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        font-family: grundfos-light;
+        font-size: 1vw; }
+      .page1 .container__quiz .question-section__answer {
+        width: 60%;
+        height: 200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto; }
+        .page1 .container__quiz .question-section__answer__item {
+          width: 70%;
+          background-color: #fff;
+          margin: auto;
+          border: solid;
+          border-width: 1px;
+          border-color: #3386c3;
+          -webkit-transition: 0.3s ease-in-out;
+          -o-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out; }
+          .page1 .container__quiz .question-section__answer__item img {
+            padding: 4%;
+            width: 20%; }
+          .page1 .container__quiz .question-section__answer__item p {
+            color: #000;
+            margin: auto;
+            float: right;
+            text-align: center;
+            margin-right: 35%;
+            margin-top: 8%;
+            font-family: grundfos-light;
+            font-size: 0.8vw; }
+          .page1 .container__quiz .question-section__answer__item p:hover {
+            color: #fff; }
+        .page1 .container__quiz .question-section__answer__item:hover {
+          background-color: #3386c3;
+          color: #fff; }
+    .page1 .container__quiz .progress {
+      position: absolute;
+      height: 5%;
+      width: 100%;
+      background-image: url(../images/progress.png);
+      bottom: 0;
+      left: 0;
+      -webkit-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.51);
+      -moz-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.51);
+      box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.51); }
+    .page1 .container__quiz .xp-bar {
+      padding: 5px;
+      margin: auto;
+      text-align: center;
+      font-family: grundfos-light;
+      color: #0068b4; }
+  .page1 .container__video {
+    background-image: url(../images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 636px;
+    position: relative;
+    margin: auto; }
+    .page1 .container__video .main-title {
+      top: 0;
+      left: 0;
+      width: 30%;
+      margin: auto;
+      font-size: 2em;
+      text-align: center;
+      font-family: grundfos-light;
+      text-transform: uppercase;
+      color: #11497b;
+      padding: 15px; }
+    .page1 .container__video .title {
+      text-align: center;
+      display: inline;
+      font-size: 1em;
+      font-family: grundfos-light; }
+      .page1 .container__video .title__user {
+        width: 140px;
+        height: 30px; }
+    .page1 .container__video #title2 {
+      font-family: grundfos-bold; }
+    .page1 .container__video .video-title {
+      display: grid;
+      margin-left: 20%;
+      grid-template-columns: 40% 40%; }
+      .page1 .container__video .video-title .title-content {
+        font-family: grundfos-light;
+        font-weight: 200;
+        font-size: 2em;
+        color: #fff; }
+      .page1 .container__video .video-title .exit {
+        font-size: 2em;
+        color: #fff;
+        margin: auto;
+        margin-left: 85%;
+        -webkit-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+      .page1 .container__video .video-title .exit:hover {
+        color: #3386c3;
+        font-size: 2.2em; }
+    .page1 .container__video .video-section {
+      margin: auto;
+      display: grid;
+      width: 100%;
+      grid-template-columns: 40% 25%;
+      position: absolute;
+      margin-left: 20%;
+      height: 60%;
+      grid-gap: 2%; }
+      .page1 .container__video .video-section .video-content {
+        border-style: solid;
+        border-width: 2px;
+        border-color: #3386c3; }
+      .page1 .container__video .video-section .video-list {
+        background-color: rgba(0, 0, 0, 0.56);
+        border-style: solid;
+        border-width: 2px;
+        border-color: #3386c3;
+        width: 80%;
+        font-family: grundfos-light; }
+        .page1 .container__video .video-section .video-list #video-title {
+          color: #fff;
+          font-size: 1.5em;
+          margin: 5%;
+          margin-left: 8%; }
+        .page1 .container__video .video-section .video-list .videos {
+          color: #fff;
+          line-height: 250%; }
+        .page1 .container__video .video-section .video-list li {
+          -webkit-transition: 0.3s ease-in-out;
+          -o-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out; }
+        .page1 .container__video .video-section .video-list li:hover {
+          color: #3386c3; }
+    .page1 .container__video .progress {
+      position: absolute;
+      height: 5%;
+      width: 100%;
+      background-image: url(../images/progress.png);
+      bottom: 0;
+      left: 0;
+      -webkit-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.51);
+      -moz-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.51);
+      box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.51); }
+    .page1 .container__video .xp-bar {
+      padding: 5px;
+      margin: auto;
+      text-align: center;
+      font-family: grundfos-light;
+      color: #0068b4; }
+  .page1 .container {
+    background-image: url(../images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 536px;
+    position: relative;
+    margin: auto;
+    display: none; }
+    .page1 .container .main-title {
+      top: 0;
+      left: 0;
+      width: 30%;
+      margin: auto;
+      font-size: 1.8vw;
+      text-align: center;
+      font-family: grundfos-light;
+      text-transform: uppercase;
+      color: #11497b;
+      padding: 15px; }
     .page1 .container .title {
       text-align: center;
       display: inline;
       font-size: 1em;
       font-family: grundfos-light; }
+      .page1 .container .title__user {
+        width: 140px;
+        height: 30px; }
     .page1 .container #title2 {
       font-family: grundfos-bold; }
     .page1 .container .profile {
@@ -107,7 +329,7 @@ body {
         -o-transition: 0.3s ease-in-out;
         transition: 0.3s ease-in-out; }
       .page1 .container .profile .profile_text {
-        font-size: 1em;
+        font-size: 1vw;
         color: #fff;
         padding: 7px;
         font-family: grundfos-light;
@@ -136,6 +358,11 @@ body {
     .page1 .container .content {
       width: 50%;
       background-color: blue;
+      margin: auto;
+      display: none; }
+    .page1 .container .content__profile {
+      width: 50%;
+      background-color: blue;
       margin: auto; }
     .page1 .container .trophy {
       width: 4%;
@@ -149,18 +376,23 @@ body {
       position: absolute;
       margin-top: 8%;
       text-align: center;
+      vertical-align: middle;
       font-family: grundfos-bold;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-size: 1vw; }
     .page1 .container .text2 {
       position: absolute;
       margin-top: 11%;
+      margin-left: -1.5%;
       text-align: center;
-      font-family: grundfos-light; }
+      vertical-align: middle;
+      font-family: grundfos-light;
+      font-size: 1vw; }
     .page1 .container .progress {
       position: absolute;
       height: 5%;
       width: 100%;
-      background-color: red;
+      background-image: url(../images/progress.png);
       bottom: 0;
       left: 0;
       -webkit-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.51);
@@ -184,7 +416,7 @@ body {
     margin: auto;
     padding: 25px; }
     .page1 .resume-progress__content .resume-progress__video {
-      width: 140px;
+      width: 50%;
       height: 75px;
       background-image: url(../images/play-button.png);
       border-style: solid;
@@ -199,10 +431,10 @@ body {
       font-family: grundfos-light;
       text-transform: uppercase; }
     .page1 .resume-progress__content h1 {
-      font-size: 1.3em;
+      font-size: 1.2vw;
       margin-left: 20%; }
     .page1 .resume-progress__content h2 {
-      font-size: 0.8em;
+      font-size: 1vw;
       font-weight: 100; }
   .page1 .topics {
     width: 100%;
@@ -218,7 +450,7 @@ body {
       padding: 20px; }
       .page1 .topics__section h1 {
         margin-top: 15%;
-        font-size: 1.7em;
+        font-size: 2vw;
         font-family: grundfos-light;
         color: #11497b; }
       .page1 .topics__section ul {
@@ -226,12 +458,12 @@ body {
       .page1 .topics__section li {
         display: inline;
         color: #000;
-        font-size: 0.7em;
+        font-size: 0.7vw;
         font-family: grundfos-bold;
         margin-left: 6%;
         margin-right: 3%; }
       .page1 .topics__section__filter {
-        width: 100px;
+        width: 100%;
         height: 25px;
         background-image: url(../images/../images/filter-btn.png);
         background-repeat: no-repeat;
@@ -239,7 +471,7 @@ body {
         margin-top: 20%;
         margin-left: 3%; }
         .page1 .topics__section__filter p {
-          font-size: 1em;
+          font-size: 0.8vw;
           color: #fff;
           padding: 7px;
           font-family: grundfos-light;
@@ -252,6 +484,15 @@ body {
         -webkit-transition: 0.3s ease-in-out;
         -o-transition: 0.3s ease-in-out;
         transition: 0.3s ease-in-out; }
+      .page1 .topics__section li:hover {
+        -webkit-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        color: #11497b;
+        filter: brightness(1.5);
+        border: solid;
+        padding-bottom: 5px;
+        border-width: 0 0 3px; }
     .page1 .topics .topics__content {
       margin: auto;
       width: 65%;
@@ -266,12 +507,25 @@ body {
         -o-transition: 0.3s ease-in-out;
         transition: 0.3s ease-in-out; }
       .page1 .topics .topics__content__course h2 {
-        font-size: 0.7em;
+        font-size: 0.7vw;
         font-family: grundfos-light;
         margin-top: -8%;
         color: #9CA0A3; }
       .page1 .topics .topics__content__course h1 {
         margin-top: -1%;
-        font-size: 1.8em;
+        font-size: 1.2vw;
         color: #11497b;
-        font-family: grundfos-light; }
+        font-family: grundfos-light;
+        padding-bottom: 5%;
+        padding-top: 2%; }
+  .page1 footer {
+    height: 560px;
+    background-image: url(../images/Footer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .page1 footer:hover {
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    filter: brightness(1.2); }
