@@ -411,13 +411,13 @@ font-family: grundfos-bold;
         
         font-family: grundfos-light;
         font-weight: 200;    
-        font-size: 2em;
+        font-size: 2vw;
         color: #fff;    
         
         }
              .exit { 
             
-            font-size: 2em;
+            font-size: 2vw;
             color: #fff;
             margin: auto;
             margin-left: 85%;
@@ -470,7 +470,7 @@ font-family: grundfos-bold;
         #video-title{ 
         
         color: #fff;
-        font-size: 1.5em;
+        font-size: 1.5vw;
         margin: 5%;
         margin-left: 8%;    
         }
@@ -478,7 +478,8 @@ font-family: grundfos-bold;
         .videos { 
         
         color: #fff;
-        line-height: 250%
+        line-height: 250%;
+		font-size: 1vw;	
 			
          
             
@@ -950,4 +951,25 @@ padding: 25px;
 }
 
 
+@media screen and (max-width: 1600px) {
+  .video-section {
+    
+	   margin: auto;    
+    display: grid;
+    width:100%;    
+    grid-template-columns: 40% 25%;
+    position: absolute;
+    margin-left: 20%; 
+    grid-gap: 2%;
+	max-height: 50%;  
+	  
+  }
+	
+	.videos { 
+	
+	line-height: 50px;
+		
+		
+	}	
 
+}

@@ -216,10 +216,10 @@ body {
       .page1 .container__video .video-title .title-content {
         font-family: grundfos-light;
         font-weight: 200;
-        font-size: 2em;
+        font-size: 2vw;
         color: #fff; }
       .page1 .container__video .video-title .exit {
-        font-size: 2em;
+        font-size: 2vw;
         color: #fff;
         margin: auto;
         margin-left: 85%;
@@ -251,12 +251,13 @@ body {
         font-family: grundfos-light; }
         .page1 .container__video .video-section .video-list #video-title {
           color: #fff;
-          font-size: 1.5em;
+          font-size: 1.5vw;
           margin: 5%;
           margin-left: 8%; }
         .page1 .container__video .video-section .video-list .videos {
           color: #fff;
-          line-height: 250%; }
+          line-height: 250%;
+          font-size: 1vw; }
         .page1 .container__video .video-section .video-list li {
           -webkit-transition: 0.3s ease-in-out;
           -o-transition: 0.3s ease-in-out;
@@ -529,3 +530,17 @@ body {
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     filter: brightness(1.2); }
+
+@media screen and (max-width: 1600px) {
+  .video-section {
+    margin: auto;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 25%;
+    position: absolute;
+    margin-left: 20%;
+    grid-gap: 2%;
+    max-height: 50%; }
+
+  .videos {
+    line-height: 50px; } }
